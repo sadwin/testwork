@@ -23,7 +23,7 @@ class ArticleList extends React.Component {
 
   componentWillReceiveProps(newProps) {
     if (newProps.token) {
-      this.fetchArticles();      
+      this.fetchArticles();
     }
   }
 
@@ -31,7 +31,7 @@ class ArticleList extends React.Component {
     return (
       <div>
         <Articles data={this.state.articles} /> <br />
-        <h2> Create an article </h2>
+        <h2> Создать заказ </h2>
         <CustomForm requestType="post" articleID={null} btnText="Create" />
       </div>
     );

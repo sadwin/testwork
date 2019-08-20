@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { connect } from 'react-redux';
 import BaseRouter from './routes';
+import BaseRouterSecond from './routesSecond';
 import 'antd/dist/antd.css';
 import * as actions from './store/actions/auth';
 
@@ -18,7 +19,11 @@ class App extends Component {
       <div>
         <Router>
           <CustomLayout {...this.props}>
+            {this.props.isAuthenticated ?
               <BaseRouter />
+              :
+              <BaseRouterSecond />
+            }
           </CustomLayout>
         </Router>
       </div>
