@@ -10,7 +10,7 @@ class ArticleList extends React.Component {
   };
 
   fetchArticles = () => {
-    axios.get("http://doublepurple.herokuapp.com/api/").then(res => {
+    axios.get("https://doublepurple.herokuapp.com/api/").then(res => {
       this.setState({
         articles: res.data
       });

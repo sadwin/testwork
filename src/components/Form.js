@@ -23,14 +23,14 @@ class CustomForm extends React.Component {
     };
 
     if (requestType === "post") {
-      await axios.post("http://doublepurple.herokuapp.com/api/create/", postObj)
+      await axios.post("https://doublepurple.herokuapp.com/api/create/", postObj)
         .then(res => {
           if (res.status === 201) {
             this.props.history.push(`/`);
           }
         })
     } else if (requestType === "put") {
-      await axios.put(`http://doublepurple.herokuapp.com/api/${articleID}/update/`, postObj)
+      await axios.put(`https://doublepurple.herokuapp.com/api/${articleID}/update/`, postObj)
         .then(res => {
           if (res.status === 200) {
             this.props.history.push(`/`);
