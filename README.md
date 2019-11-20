@@ -17,6 +17,6 @@ python manage.py runserver
 
 ```json
 git init
-git clone 
+git clone https://github.com/sadwin/testwork.git
 cd DjReact
 ```
