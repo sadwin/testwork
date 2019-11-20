@@ -9,7 +9,7 @@ cd env/Scripts
 activate.bat
 cd ../../
 python manage.py makemigrations
-python manage.py runserver
+python manage.py migrate
 python manage.py runserver
 ```
 
